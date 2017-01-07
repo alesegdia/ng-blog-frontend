@@ -1,0 +1,184 @@
+/* GENERAL ************************/
+* {
+  font-family: "Vollkorn";
+}
+
+.content {
+    padding: 2em 3em 0;
+}
+
+.popup-form {
+  color: black;
+  width: 100%;
+  z-index: 100;
+}
+
+textarea {
+  resize: none;
+}
+
+
+/* SIDEBAR ************************/
+.sidepanel {
+  padding: 0;
+  text-align: center;
+  top: auto;
+  background-color: #0f1928;
+  color: white;
+}
+
+.sidepanel-title {
+  margin: 0;
+}
+
+.sidepanel-content {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.sidepanel-menu a:hover{
+  color: #AAA;
+}
+
+.sidepanel-menu a {
+  color: #AAA;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.sidepanel-menu {
+  width: 12em;
+}
+
+.sidepanel-subtitle {
+  font-weight: lighter;
+  margin: 0em;
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
+}
+
+.pure-menu-link:hover,
+.pure-menu-link:visited,
+.pure-menu-link:active 	{ background-color: #0f1928; }
+
+.pure-menu li a:hover, a:focus {
+  background: #34a0ed;
+  color: white;
+}
+
+.contact-info {
+  margin-top: 1em;
+  color: white;
+}
+
+
+/* FOOTER ************************/
+.footer p {
+  color: darkgray;
+  line-height: 0;
+}
+
+.footer {
+  margin-bottom: 1.5em;
+}
+
+.footer a:hover, a:link, a:visited, a:active {
+  color: gray;
+}
+
+
+/* POSTS ************************/
+.fake-link {
+  cursor: hand;
+  cursor: pointer;
+}
+
+.post-remove {
+  color: red;
+}
+
+.post-update {
+  color: blue;
+}
+
+.post-add-open {
+  color: green;
+}
+
+.post-add-close {
+  color: blue;
+}
+
+.post {
+  margin-top: 1.5em;
+  margin-bottom: 2.5em;
+}
+.post-author {
+  margin: 0;
+  color: #444;
+}
+
+.post-title {
+  margin: 0;
+}
+
+.post-add-button {
+  padding: 0.1em 0.3em 0.1em 0.3em;
+}
+
+.post-image-container {
+  width: 100%;
+}
+
+.post-image {
+  width: 100%;
+  height: 10em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.grow {
+  transition: all .2s ease-in-out;
+  filter: grayscale(40%);
+}
+
+.grow:hover {
+  filter: grayscale(0%);
+  transform: scale(1.01);
+}
+
+
+/* BIG SCREEN SPECIFICS ************************/
+@media (min-width: 48em) {
+  .sidepanel {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+
+  }
+
+  .sidepanel-content {
+    margin-top: 10em;
+  }
+
+  .content {
+    padding: 2em 3em 0;
+    margin-left: 12em;
+  }
+
+  .popup-form {
+    width: 20em;
+    background-color: white;
+    padding: 1em;
+    border-radius: 12px;
+    left: 25em;
+    position: fixed;
+    border-width: 1px;
+    border-style: solid;
+    border-color: lightgray;
+  }
+
+}
