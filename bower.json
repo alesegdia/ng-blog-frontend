@@ -1,0 +1,27 @@
+{
+  "name": "agresebe-blog",
+  "authors": [
+    "Alejandro Seguí <alesegdia@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.6.1",
+    "angular-resource": "^1.6.1",
+    "pure": "^0.6.1",
+    "angular-route": "^1.6.1",
+    "underscore": "^1.8.3",
+    "angular-underscore-module": "^1.0.3",
+    "font-awesome": "^4.7.0"
+  }
+}
