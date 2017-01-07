@@ -40,7 +40,7 @@ A clean sidebar based design with a serif font has been chosen. Post images have
 
 * To create a new post, press the plus (+) button near *Blog*. You can close the popup by pressing the same icon, which will change from plus (+) to minus (-), or by actually pressing the *create post* button.
 * To remove a post, press the red trash can icon near a post title. A confirm popup will be shown.
-* To edit a post, press the blue paper-and-pen icon.
+* To edit a post, press the blue pen-and-paper icon.
 
 *New post* and *update post* popups are mutually exclusive.
 
