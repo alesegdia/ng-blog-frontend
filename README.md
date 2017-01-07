@@ -36,7 +36,7 @@ And the frontend should ready to be used at python's http server default address
 
 ## UI/UX facts and decisions
 
-A clean sidebar based design with a serif font has been chosen. Post images have been presented partially, being able to watch them fully by clicking on them. The UI has been focused to editing purposes, and it is presumed that the design is quite intuitive, but steps to interact will be presented just for the record.
+A clean sidebar based design with a serif font has been chosen. The design is responsive, so it will be shown with the sidebar being a top bar in smaller screens. Post images have been presented partially, being able to watch them fully by clicking on them. The UI has been focused to editing purposes, and it is presumed that the design is quite intuitive, but steps to interact will be presented just for the record.
 
 * To create a new post, press the plus (+) button near *Blog*. You can close the popup by pressing the same icon, which will change from plus (+) to minus (-), or by actually pressing the *create post* button.
 * To remove a post, press the red trash can icon near a post title. A confirm popup will be shown.
