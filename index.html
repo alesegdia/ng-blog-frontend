@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="bower_components/pure/pure-min.css">
+    <link rel="stylesheet" href="bower_components/pure/grids-responsive-min.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Vollkorn">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body ng-app="agresebe.blog.app">
+
+    <div class="sidepanel" ng-init="newPostActive = false">
+
+      <div class="sidepanel-content">
+        <h1 class="sidepanel-title">AGRSite</h1>
+        <h4 class="sidepanel-subtitle"><small>This is an example blog</small></h4>
+
+        <center>
+
+          <div class="sidepanel-menu pure-menu custom-restricted-width">
+            <ul class="pure-menu-list">
+              <li class="pure-menu-item"><a href="#!/posts" class="pure-menu-link">Home</a></li>
+              <li class="pure-menu-item"><a href="#!/about" class="pure-menu-link">About</a></li>
+            </ul>
+          </div>
+
+          <div class="contact-info">
+            <i class="fa fa-envelope-o"></i> <small>lorem@ipsum.com</small>
+          </div>
+
+        </center>
+
+      </div>
+
+    </div>
+
+    <div class="content">
+
+      <div ng-view>
+      </div>
+
+      <div class="footer">
+        <center>
+          <p><small><i class="fa fa-copyright"></i> Copyright 2016-2017 John Doe</small></p>
+          <p><small>Powered by <a href="https://angularjs.org/">AngularJS</a> and <a href="http://purecss.io">PureCSS</a></small></a></p>
+        </center>
+      </div>
+
+    </div>
+
+    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-underscore-module/angular-underscore-module.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

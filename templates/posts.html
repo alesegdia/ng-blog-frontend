@@ -1,0 +1,68 @@
+
+<div ng-init="newPostActive=false">
+  <p>
+    <h1 style="display: inline;">Blog
+      <a ng-show="!newPostActive" class="fake-link post-add-open" ng-click="openNewPostForm()"><i class="fa fa-plus-square-o"></i></a>
+      <a ng-show="newPostActive" class="fake-link post-add-close" ng-click="closeNewPostForm()"><i class="fa fa-minus-square-o"></i></a>
+    </h1>
+  </p>
+
+  <div id="errors">
+    <p>{{ errorstatus }}</p>
+    <p>{{ errors }}</p>
+  </div>
+
+  <div ng-show="newPostActive" class="popup-form">
+    <form class="pure-form">
+      <fieldset>
+        <legend>Create new post</legend>
+          <input ng-model="newPost.title" id="post-title" type="text" class="pure-input-1" placeholder="Post title">
+          <textarea ng-model="newPost.body" rows=10 id="post-body" class="pure-input-1" placeholder="Post body..."></textarea>
+      </fieldset>
+      <button type="submit" ng-click="createPost()" class="pure-button pure-input-1 pure-button-primary">Create post</button>
+    </form>
+  </div>
+
+
+</div>
+
+<div ng-init="updatePostActive=false">
+  <div ng-show="updatePostActive" class="popup-form">
+    <form class="pure-form">
+      <fieldset>
+        <legend>Update post</legend>
+        <input ng-model="editedPost.title" id="post-title" type="text" class="pure-input-1">
+        <textarea ng-model="editedPost.body" rows=10 id="post-body" class="pure-input-1"></textarea>
+      </fieldset>
+      <button type="submit" ng-click="updatePost()" class="pure-button pure-input-1 pure-button-primary">Update post</button>
+      <button type="submit" ng-click="updatePostActive=false" class="pure-button pure-input-1 pure-button">Close</button>
+    </form>
+  </div>
+
+  <div class="post-container" ng-repeat="post in posts">
+    <div class="post">
+
+      <div class="post-header">
+
+        <h3 class="post-title">{{ post.title }}&nbsp;
+          <a class="post-remove fake-link" ng-click="removePostByID(post.id)"><i class="fa fa-trash-o"></i></a>
+          <a class="post-update fake-link" ng-click="openUpdateDialog(post.id)"><i class="fa fa-edit"></i></a>
+        </h3>
+
+        <small class="post-author">Written by <b>{{ post.author.username }}</b></small>
+
+        <div class="post-image-container" ng-if="post.photos">
+          <center>
+            <div class="" ng-repeat="photo in post.photos"><a href="http://blog.agresebe.com/{{photo.image}}"><div class=" grow post-image" style="background-image: url('http://blog.agresebe.com/{{photo.image}}')"></div></a></div>
+          </center>
+        </div>
+
+      </div>
+
+      <div class="post-body">
+        <p>{{ post.body }}</p>
+      </div>
+
+    </div>
+  </div>
+</div>
